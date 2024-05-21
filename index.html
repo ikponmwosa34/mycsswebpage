@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Website</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #111;
+        }
+
+
+
+        li a, .dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: blue;
+        }
+
+        li.dropdown{
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: blue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn{
+            background-color: #3e3e3e;
+        }
+
+    
+
+        .first-paragraph{
+            margin-top:110px ;
+            font-size: 15px;
+            position: relative;
+            left: 750px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        @keyframes fadeInMoveUp {
+            0%{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .second-paragraph{
+            font-size: 60px;
+            font-family: Georgia, 'Times New Roman';
+            text-align: center;
+            animation: fadeInMoveUp 2s ease-in-out;
+        }
+
+        .nav-link{
+            font-size: 20px;
+        }
+
+        .text-size{
+            font-size: 20px;
+            margin-top: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .paragraph-button{
+            color: #3e3e3e;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .text-size2{
+            font-size: 20px;
+            margin-top: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .space-button{
+            color: #3e3e3e;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .text-size3{
+            font-size: 20px;
+            margin-top: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .space-button2{
+            color: #111;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+.footer {
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+   <ul>
+    <li><a href="#bergen" class="nav-link">Bergen</a></li>
+    <li style="float:right"><a  href="#work">Work</a></li>
+    <li style="float:right"><a href="#about">About</a></li>
+    <li style="float:right;"><a href="#ourservices">Our Services</a></li>
+    <li style="float:right;" class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+     <a href="#">Residential Design</a>
+     <a href="#">Commercial Design</a>
+     <a href="#">Experimential Design</a>
+    </div>
+   </li>
+   </ul> 
+
+<p class="first-paragraph">Our mission</p>
+<p class="second-paragraph">Creating spaces that are <br>comfortable, memorable and inspiring.</p>
+<img src="realistic-modern-double-bedroom-with-furniture-frame_176382-437.jpg" alt="realistic-modern-double-bedroom-with-furniture-frame_176382-437">
+
+<p class="text-size">Residential Design <button style="float: right;" class="paragraph-button">see Project</button></p>
+<p>Apartments, homes and vacation properties</p>
+<img src="bathtub-with-curtain-cupboard-shower_176382-1750.jpg" alt="bathtub-with-curtain-cupboard-shower_176382-1750">
+
+<p class="text-size2">Commercial Design <button style="float: right;" class="space-button">see Project</button></p>
+<p>Creative and inviting retail and hospitality environment</p>
+<img src="realistic-modern-double-bedroom-with-furniture-frame_176382-428.jpg" alt="realistic-modern-double-bedroom-with-furniture-frame_176382-428">
+
+<p class="text-size3">Experimential Design <button style="float: right;" class="space-button2">see Project</button></p>
+<p>Temporary and permanent branded spaces.</p>
+
+   <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.twitter.com">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
+                  </div>
+        </div>
+    </footer>
+</body>
+</html>
+  
